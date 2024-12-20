@@ -4,7 +4,7 @@ function primerClick() {
 
     setTimeout( () => {
         document.getElementById('segundo-boton').classList += 'activo';
-    }, 1000);
+    }, 10000);
 }
 
 function segundoClick(){
