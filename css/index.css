@@ -1,0 +1,159 @@
+body {
+    background-color: #899db0;
+}
+
+#boton-inicio {
+    opacity: 1; 
+    transition: opacity 0.5s ease-in-out; 
+}
+#boton-inicio.invisible {
+    opacity: 0;
+    pointer-events: none;
+}
+#boton-inicio:hover #span-inicio:after{
+    content:"pero no asi que duele";
+}
+ 
+#hola-homero {
+    position: fixed;
+    
+    bottom: -800px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    transition: all 1s;
+}
+#hola-homero.activo {
+    bottom: 10%;
+}
+
+#segundo-boton {
+    display: none;
+}
+#segundo-boton.activo {
+    display: block;
+}
+
+#tercer-boton {
+    display: none;
+}
+#tercer-boton.activo {
+    display: block;
+}
+
+#cuarto-boton {
+    display: none;
+}
+#cuarto-boton.activo {
+    display: block;
+}
+
+#quinto-boton {
+    display: none;
+}
+#quinto-boton.activo {
+    display: block;
+}
+
+#un-sudoku {
+    position: fixed;
+
+    opacity: 0;
+    width: 1px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    transition: all 3s;
+}
+#un-sudoku.activo {
+    width: 300px;
+    opacity: 1;
+}
+
+#el-sudoku { 
+    display: none;
+    grid-template-columns: auto auto auto;
+    background-color: black;
+    padding: 1px;
+    height: 400px;
+    width: 400px;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#el-sudoku > div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+}
+#el-sudoku > div > div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+#el-sudoku > div > div:hover {
+    background-color: #8d8d8d;
+    cursor: pointer;
+}
+#el-sudoku.activo {
+    display: grid;
+}
+
+#regalo {
+    position: fixed;
+
+    opacity: 0;
+    width: 1px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    transition: all 20s;
+}
+#regalo.activo {
+    width: 500px;
+    opacity: 1;
+}
+
+#dibujo {
+    position: fixed;
+
+    opacity: 0;
+    width: 1px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    transition: all 0.5s;
+}
+#dibujo.activo {
+    opacity: 1;
+    width: 50%;
+    rotate: 5deg;
+}
+
+#dibujo-dos {
+    display: none;
+    position: fixed;
+    width: 50%;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    rotate: 5deg;
+}
+#dibujo-dos.activo {
+    display: block;
+}
